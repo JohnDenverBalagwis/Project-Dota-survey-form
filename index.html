@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Dota 2 Survey Form</h1>
+        <p id="description" class="description text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, qui.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="8"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>What is your role/position in the game?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select your role</option>
+            <option value="student">Position 1/ Carry</option>
+            <option value="job">Position 2/ Mid</option>
+            <option value="learner">Position 3/ Offlane</option>
+            <option value="preferNo">Position 4/Roam</option>
+            <option value="other">Position 5/ Support</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Dota 2 to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What is your Rank?</p>
+          <select id="rank-medal" name="yourRank" class="form-control" required>
+            <option disabled selected value>Select your rank</option>
+            <option value="challenges">Herald</option>
+            <option value="projects">Guardian</option>
+            <option value="community">Crusader</option>
+            <option value="openSource">Archon</option>
+            <option value="challenges">Legend</option>
+            <option value="challenges">Ancient</option>
+            <option value="challenges">Divine</option>
+            <option value="challenges">Immortal</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Which team is most likely to win the International 11?</p>
+
+          <label
+            ><input
+              name="1st-team"
+              value="TI10 Champion"
+              type="checkbox"
+              class="input-checkbox"
+            />Team Spirit</label
+          >
+          <label>
+            <input
+              name="2nd-team"
+              value="China no.1"
+              type="checkbox"
+              class="input-checkbox"
+            />PSG. LGD</label
+          >
+          <label
+            ><input
+              name="3rd-team"
+              value="2 times TI Champion"
+              type="checkbox"
+              class="input-checkbox"
+            />OG</label
+          >
+
+          <label
+            ><input
+              name="5th-team"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Team Secret</label
+          >
+          <label
+            ><input
+              name="6th-team"
+              value="China no.2"
+              type="checkbox"
+              class="input-checkbox"
+            />Team Aster</label
+          >
+          <label
+            ><input
+              name="7th-team"
+              value="SEA no.1"
+              type="checkbox"
+              class="input-checkbox"
+            />Boom Rivalry</label
+          >
+          <label
+            ><input
+              name="8th-team"
+              value="SA no.2"
+              type="checkbox"
+              class="input-checkbox"
+            />Thunder Awaken</label
+          >
+          <label
+            ><input
+              name="9th-team"
+              value="NA no.3"
+              type="checkbox"
+              class="input-checkbox"
+            />TSM.FTX</label
+          >
+          <label
+            ><input
+              name="10th-team"
+              value="storm"
+              type="checkbox"
+              class="input-checkbox"
+            />Evil Genuises</label
+          >
+          <label
+            ><input
+              name="11th-team"
+              value="ESL One Fall 2021"
+              type="checkbox"
+              class="input-checkbox"
+            />Tundra</label
+          >
+          <label
+            ><input
+              name="12th-team"
+              value="SA no.1"
+              type="checkbox"
+              class="input-checkbox"
+            />Beastcoast</label
+          >
+          <label
+            ><input
+              name="13th-team"
+              value="GG"
+              type="checkbox"
+              class="input-checkbox"
+            />Gaimin Gladiator</label
+          >
+          <label
+            ><input
+              name="14th-team"
+              value="SEA no.2"
+              type="checkbox"
+              class="input-checkbox"
+            />Fnatic</label
+          >
+          <label
+            ><input
+              name="15th-team"
+              value="SEA no.3"
+              type="checkbox"
+              class="input-checkbox"
+            />T1</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>How do you feel about the current meta?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
